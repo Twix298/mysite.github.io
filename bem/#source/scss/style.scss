@@ -1,0 +1,460 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+
+body{
+	font-family: Lato;
+}
+
+.header {
+	flex: 1 1 auto;
+	position: relative;
+	text-align: center;
+	
+
+	&__body {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto; 
+		background-image: url('../../bem/img/BG-Header.png');
+		background-repeat: no-repeat;
+		justify-content: space-between;
+		
+	}
+
+	&__logo {
+		
+		padding: 5% 0;
+	}
+
+	&__text {
+
+	}
+
+	&__title-first {
+		font-size: 34pt;
+		color: white;
+		font-family: Lato;
+		text-transform: uppercase;
+		font-weight: 900;
+		letter-spacing: 5.43px;
+		margin: 0 0 25px 0;
+	}	
+
+	&__title {
+		font-size: 26pt;
+		color: white;
+		letter-spacing: 4.15px;
+		font-weight: 400;
+		position: relative;
+		padding: 0 0 50px 0;
+		&:after{
+			content:'';
+			position: absolute;
+			width: 105px;
+			bottom: 0;
+			height: 2px;
+			left: 50%;
+			background-color: #ffffff;
+			margin: 0px 0px 0px -52px;
+		}
+	}
+	
+
+	&__button {
+		
+	}
+
+	&__arrow {
+		position: relative;
+		margin: 0 0 5% 0;
+		animation: arrow linear linear 1s infinite alternate  none;
+		-webkit-animation:  1s infinite linear;
+		-moz-animation:  1s infinite linear;
+		-o-animation:  1s infinite linear;
+	}
+	@keyframes arrow {
+		0%{top: 0;}
+		50%{top: 200px;}
+		100%{top: 0px;}
+	}
+	
+}
+
+
+
+.btn {
+	display: block;
+		margin: 0 auto;
+		border: 1px solid white;
+		color: white;
+		width: 185px;
+		background: transparent;
+		height: 50px;
+		
+}
+
+
+.about {
+	&__body {
+		max-width: 823px;
+		margin: 0px auto;
+		padding: 20px 0;
+	}
+	&__header {
+		margin: 0px 0px 65px 0px;
+	}
+	&__title {
+		margin: 0px 0px 30px 0px;
+	}
+	&__text {
+		max-width: 688px;
+		color: #868585;
+		font-size: 14px;
+		font-weight: 300;
+		text-align: center;
+		line-height: 25.89px;
+		margin: 0px auto;
+	}
+	&__row {
+		display: flex;
+		font-size: 0;
+		margin: 0px -15px;
+	}
+	&__column {
+		padding: 0px 15px;
+		flex: 0 0 33.333%;
+	}
+}
+.title {
+	font-size: 34px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 8.95px;
+	position: relative;
+	text-align: center;
+	padding: 0px 0px 30px 0px;
+	&:after{
+		content:'';
+		position: absolute;
+		width: 50px;
+		bottom: 0;
+		height: 2px;
+		left: 50%;
+		background-color: #ffffff;
+		margin: 0px 0px 0px -25px;
+	}
+}
+.item-about {
+	&__icon {
+		margin: 0px auto 40px auto;
+		border-radius: 50%;
+		width: 92px;
+		height: 92px;
+		border: 2px solid #f1f1f1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__title {
+		text-align: center;
+		color: #000000;
+		font-size: 22px;
+		text-transform: uppercase;
+		letter-spacing: 3.52px;
+		margin: 0px 0px 35px 0px;
+	}
+	&__text {
+		text-align: center;
+		color: #868585;
+		line-height: 26px;
+		font-weight: 300;
+		font-size: 14px;
+	}
+}
+.portfolio {
+
+	&__body {
+		max-width: 1120;
+		margin: 0px auto;
+		padding: 20px 0;
+		background-color: #f3f3f3;
+	}
+
+	&__header {
+	}
+
+	&__menu {
+		display: flex;
+		position: relative;
+		margin: 0 auto;
+		max-width: 285px;
+		
+	}
+
+	&__row-all {
+		font-size: 15pt;
+		text-align: center;
+		padding: 0 30px 30px 0;
+	}
+
+	&__row-web {
+		font-size: 15pt;
+		text-align: center;
+		padding: 0 30px 30px 0;
+	}
+
+	&__menu li{
+		margin: 45px auto;	
+	}
+
+	&__menu li:first-child{
+		color: #ada074;
+	}
+
+	&__row-apps {
+		font-size: 15pt;
+		text-align: center;
+		padding: 0 30px 30px 0;
+	}
+
+	&__row-other {
+		font-size: 15pt;
+		text-align: center;
+		padding: 0 30px 30px 0;
+	}
+
+	&__row {
+		display: flex;
+		margin: 0 auto;
+	}
+	
+
+	&__column {
+		flex: 0 0 50%;
+		
+		
+	}
+
+	&__image {
+		background-color: #eaeaea;
+		width: 530px;
+		height: 360px;
+		max-width: 530px;
+		max-height: 360px;
+		margin: 20px auto;
+		overflow: hidden
+	}
+
+	.img {
+		height: auto;
+		width: 100%;
+		
+	}
+		
+		&__image {
+			background-color: #eaeaea;
+			width: 230px;
+			height: 260px;
+			max-width: 230px;
+			max-height: 260px;
+			margin: 20px auto;
+			overflow: hidden
+		}
+
+}
+
+
+
+.button {
+	display: block;
+	margin: 0 auto;
+	border: 1px solid black;
+	width: 185px;
+	height: 50px;
+}
+
+.partners{
+	width: auto;
+	height: 385px;
+	background-image: url('../../bem/img/bg-header-copy-right.png');
+	position: relative;
+	
+}
+.partners {
+	&__title{
+		font-size: 30.36pt;
+		color: white;
+		margin: 100px auto;
+		text-align: center;
+		// margin-left: 43%;
+		font-family: Lato;
+		font-weight: 300;
+
+	}
+
+	&__icons {
+		text-align: center;
+	}
+
+	&__icon {
+		display: block;
+		padding: 0 55px;
+	}
+}
+
+.contact {
+
+	&__title {
+		margin: 185px 0 125px 0;
+	}
+	&__body {
+		margin: 0 25%;
+		text-align: center;
+		max-width: 720px;
+		display: flex;
+	}
+
+	&__column {
+		flex: 0 0 50%;
+		margin: 0 40px 0 0;
+
+	}
+
+	&__form {
+	}
+
+	&__text {
+		text-align: left;
+		font-weight: 300;
+		margin: 0 0 45px 0;
+		max-width: 255px;
+		line-height: 20px;
+	}
+
+	&__name {
+		text-align: left;
+		font-weight: 700;
+		margin: 0 0 25px 0;
+	}
+
+	&__social {
+		text-align: left;
+		display: flex;
+		margin: 0 0 17px 0;
+	}
+
+	&__icon {
+		border: 2px black solid ;
+		padding: 6px 7px;
+		margin: 0 7px 0 0;
+		height: 30px;
+		width: 30px;
+		border-radius: 15px;
+		
+	}
+
+	&__email {
+		text-align: left;
+		color: black;
+		font-weight: 700;
+	}
+}
+.form-contact {
+
+	&__row {
+		display: flex;
+	}
+
+	&__column {
+		flex: 0 0 50%;
+		padding: 0 0 20px 0;
+		
+	}
+
+	&__form {
+		margin: 0 15px;
+	}
+
+	&__input {
+		background-color: #f8f7f7;
+		border-top: black solid 1px;
+		width: 160px;
+		height: 37px;
+		padding: 20px 0 0 0;
+	}
+
+	&__label {
+		padding: 0 0 20px 0;
+		text-align: left;
+		font-size: 14pt;
+		font-weight: bold;
+	}
+
+	&__message {
+		margin: 75px 0 42px 0;
+	}
+
+	&__textarea {
+		border-top: black solid 1px;
+		background-color: #f8f7f7;
+		width: 380px;
+		height: 125px;
+	}
+
+	&__button {
+		float: right;
+		font-size: 14pt;
+		font-weight: bold;
+		margin: 0 0 85px 0;
+	}
+}
+
+.footer {
+
+	&__body {
+		background-color: #3c3c3c;
+		padding: 50px 0 0 0;
+	}
+
+	&__logo {
+		text-align: center;
+		margin: 0 auto 45px 0;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		margin-left: 0;
+		padding-left: 0;
+		list-style-type: none;
+		font-size: 14pt;
+	}
+
+	&__link {
+		margin: 0 10px;
+		color: #909090;
+		font-family: Lato;
+	}
+
+	&__link:hover{
+		color:  white;
+		border-bottom: 1px solid white;
+	}
+
+	&__copyright{
+		padding: 35px 0 50px 0;
+		text-align: center;
+		color: #6c6c6c;
+		font-size: 14pt;
+	}
+}
+
+
+
+
+
+
+
